@@ -20,8 +20,6 @@ private:
 public:
 
     void insert(string name, int value);
-
-    // For expression like: c = 5 + 6
     void insertExpression(string name, int left, int right, char op);
 
     bool exists(string name);
