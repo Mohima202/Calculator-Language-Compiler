@@ -1,0 +1,118 @@
+# depslib dependency file v1.0
+1785596671 source:d:\minigames3\minicalculator project\calculator language compiler\lexer.cpp
+	"lexer.h"
+	<cctype>
+
+1785596671 d:\minigames3\minicalculator project\calculator language compiler\lexer.h
+	<iostream>
+	<vector>
+	<string>
+
+1785603280 source:d:\minigames3\minicalculator project\calculator language compiler\main.cpp
+	<iostream>
+	<vector>
+	<string>
+	"lexer.h"
+	"symboltable.h"
+	"parser.h"
+	"semantic.h"
+	"intermediate.h"
+	"tac.h"
+	"optimizer.h"
+
+1785597431 d:\minigames3\minicalculator project\calculator language compiler\parser.h
+	"lexer.h"
+	<vector>
+
+1785597431 source:d:\minigames3\minicalculator project\calculator language compiler\parser.cpp
+	"parser.h"
+	<iostream>
+
+1785599685 source:d:\minigames3\minicalculator project\calculator language compiler\symboltable.cpp
+	"symboltable.h"
+	<iostream>
+
+1785599685 d:\minigames3\minicalculator project\calculator language compiler\symboltable.h
+	<iostream>
+	<map>
+	<string>
+
+1785597893 source:d:\minigames3\minicalculator project\calculator language compiler\semantic.cpp
+	"semantic.h"
+	<iostream>
+
+1785597893 d:\minigames3\minicalculator project\calculator language compiler\semantic.h
+	"lexer.h"
+	"symboltable.h"
+	<vector>
+
+1785600288 source:d:\minigames3\minicalculator project\calculator language compiler\intermediate.cpp
+	"intermediate.h"
+	<iostream>
+
+1785600288 d:\minigames3\minicalculator project\calculator language compiler\intermediate.h
+	"lexer.h"
+	<vector>
+
+1785603280 source:d:\minigames3\minicalculator project\calculator language compiler\tac.cpp
+	"tac.h"
+	<iostream>
+
+1785603280 d:\minigames3\minicalculator project\calculator language compiler\tac.h
+	"lexer.h"
+	<vector>
+	<string>
+
+1785603450 d:\minigames3\minicalculator project\calculator language compiler\optimizer.h
+	<vector>
+	<string>
+
+1785599407 source:d:\minigames3\minicalculator project\calculator language compiler\optimizer.cpp
+	"optimizer.h"
+	<iostream>
+	<vector>
+
+1785604417 source:d:\calculator language compiler\main.cpp
+	<iostream>
+	<vector>
+	<string>
+	"lexer.h"
+	"symboltable.h"
+	"parser.h"
+	"semantic.h"
+	"intermediate.h"
+	"tac.h"
+	"optimizer.h"
+
+1785596671 d:\calculator language compiler\lexer.h
+	<iostream>
+	<vector>
+	<string>
+
+1785599685 d:\calculator language compiler\symboltable.h
+	<iostream>
+	<map>
+	<string>
+
+1785597431 d:\calculator language compiler\parser.h
+	"lexer.h"
+	<vector>
+
+1785597893 d:\calculator language compiler\semantic.h
+	"lexer.h"
+	"symboltable.h"
+	<vector>
+
+1785600288 d:\calculator language compiler\intermediate.h
+	"lexer.h"
+	<vector>
+
+1785603280 d:\calculator language compiler\tac.h
+	"lexer.h"
+	<vector>
+	<string>
+
+1785603450 d:\calculator language compiler\optimizer.h
+	<vector>
+	<string>
+
