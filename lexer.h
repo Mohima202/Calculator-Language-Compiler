@@ -7,8 +7,6 @@
 #include <string>
 
 using namespace std;
-
-// Types of tokens
 enum TokenType
 {
     KEYWORD,
@@ -25,15 +23,11 @@ enum TokenType
     END_OF_FILE,
     INVALID
 };
-
-// Token structure
 struct Token
 {
     TokenType type;
     string value;
 };
-
-// Lexer class
 class Lexer
 {
 private:
