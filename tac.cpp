@@ -2,7 +2,6 @@
 #include "tac.h"
 #include <iostream>
 
-
 using namespace std;
 
 
@@ -10,8 +9,6 @@ TAC::TAC(vector<Token> t)
 {
     tokens = t;
 }
-
-
 
 void TAC::generate()
 {
@@ -25,18 +22,12 @@ void TAC::generate()
 
     while(i < tokens.size())
     {
-
-
-        // a = 5;
-
         if(i+3 < tokens.size() &&
            tokens[i].type == IDENTIFIER &&
            tokens[i+1].type == ASSIGN &&
            tokens[i+2].type == NUMBER &&
            tokens[i+3].type == SEMICOLON)
         {
-
-
             string line =
             tokens[i].value + " = " +
             tokens[i+2].value;
@@ -52,12 +43,6 @@ void TAC::generate()
             continue;
 
         }
-
-
-
-
-        // a = 5 + 2;
-
         if(i+5 < tokens.size() &&
            tokens[i].type == IDENTIFIER &&
            tokens[i+1].type == ASSIGN &&
@@ -68,8 +53,6 @@ void TAC::generate()
             tokens[i+4].type == IDENTIFIER) &&
            tokens[i+5].type == SEMICOLON)
         {
-
-
             string tempLine =
             "t" + to_string(temp) +
             " = " +
@@ -102,8 +85,6 @@ void TAC::generate()
             continue;
 
         }
-
-
         i++;
 
     }
