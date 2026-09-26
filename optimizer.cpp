@@ -10,31 +10,21 @@ Optimizer::Optimizer(vector<string> t)
 {
     tacCode = t;
 }
-
-
-
 void Optimizer::optimize()
 {
 
     cout << "\n========== OPTIMIZATION ==========\n";
-
-
     cout << "\nOriginal TAC:\n";
 
 
     for(string line : tacCode)
     {
-        cout << line << endl;
+        cout<<line<<endl;
     }
-
-
-
     vector<string> optimized;
 
 
     cout << "\nConstant Folding Applied:\n";
-
-
 
     for(string line : tacCode)
     {
@@ -44,12 +34,6 @@ void Optimizer::optimize()
 
 
         stringstream ss(line);
-
-
-
-        // Example:
-        // t1 = 5 + 3
-
         ss >> result >> equal >> num1 >> op >> num2;
 
 
@@ -83,14 +67,12 @@ void Optimizer::optimize()
 
     }
 
-
-
     cout << "\nOptimized TAC:\n";
 
 
     for(string line : optimized)
     {
-        cout << line << endl;
+        cout<<line<<endl;
     }
 
 }
