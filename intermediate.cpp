@@ -49,13 +49,6 @@ void Intermediate::generate()
             continue;
         }
 
-
-
-        /*
-            c = a + b;
-            c = 5 + 6;
-        */
-
         if(i + 5 < tokens.size() &&
            tokens[i].type == IDENTIFIER &&
            tokens[i+1].type == ASSIGN &&
