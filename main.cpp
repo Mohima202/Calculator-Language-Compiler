@@ -47,9 +47,6 @@ int main()
 
 
     lexer.printTokens(tokens);
-
-
-
     // ==========================
     // 2. Syntax Analysis
     // ==========================
@@ -62,9 +59,6 @@ int main()
         cout << "Syntax Error!\n";
         return 0;
     }
-
-
-
     // ==========================
     // 3. Symbol Table
     // ==========================
@@ -74,10 +68,6 @@ int main()
 
     for(int i=0; i<tokens.size(); i++)
     {
-
-
-        // a = 10;
-
         if(i+3 < tokens.size() &&
            tokens[i].type == IDENTIFIER &&
            tokens[i+1].type == ASSIGN &&
@@ -91,11 +81,6 @@ int main()
             );
 
         }
-
-
-
-        // c = a + b;
-
         else if(i+5 < tokens.size() &&
                 tokens[i].type == IDENTIFIER &&
                 tokens[i+1].type == ASSIGN &&
@@ -118,11 +103,6 @@ int main()
             );
 
         }
-
-
-
-        // x = 5 + 6;
-
         else if(i+5 < tokens.size() &&
                 tokens[i].type == IDENTIFIER &&
                 tokens[i+1].type == ASSIGN &&
@@ -194,7 +174,7 @@ Optimizer optimizer(tacCode);
 optimizer.optimize();
 
 
-    cout << "\n========== COMPILATION FINISHED ==========\n";
+    cout<<"\n========== COMPILATION FINISHED ==========\n";
 
 
     return 0;
