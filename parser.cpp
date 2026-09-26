@@ -12,8 +12,6 @@ Parser::Parser(vector<Token> t)
 bool Parser::checkSyntax()
 {
     cout << "\n========== SYNTAX ANALYSIS ==========\n";
-
-    // a = ;
     for(int i = 0; i < tokens.size()-1; i++)
     {
         if(tokens[i].type == ASSIGN &&
@@ -23,8 +21,6 @@ bool Parser::checkSyntax()
             return false;
         }
     }
-
-    // a = 5 +
     for(int i = 0; i < tokens.size()-1; i++)
     {
         if((tokens[i].type == PLUS ||
@@ -39,14 +35,11 @@ bool Parser::checkSyntax()
             return false;
         }
     }
-
-    // Missing semicolon
     if(tokens[tokens.size()-2].type != SEMICOLON)
     {
         cout << "Syntax Error : Missing ';'\n";
         return false;
     }
-
     cout << "No Syntax Error.\n";
     return true;
 }
