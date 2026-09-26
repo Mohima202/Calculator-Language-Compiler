@@ -15,15 +15,11 @@ vector<Token> Lexer::tokenize()
     while (pos < input.length())
     {
         char current = input[pos];
-
-        // Ignore spaces
         if (isspace(current))
         {
             pos++;
             continue;
         }
-
-        // Identifier / Keyword
         if (isalpha(current))
         {
             string word;
@@ -34,7 +30,6 @@ vector<Token> Lexer::tokenize()
                 word += input[pos];
                 pos++;
             }
-
             if (word == "int")
                 tokens.push_back({KEYWORD, word});
             else
@@ -42,8 +37,6 @@ vector<Token> Lexer::tokenize()
 
             continue;
         }
-
-        // Number
         if (isdigit(current))
         {
             string number;
@@ -134,8 +127,8 @@ void Lexer::printTokens(vector<Token> tokens)
             break;
 
         case MINUS:
-            cout << "MINUS : " << t.value << endl;
-            break;
+           cout << "MINUS : " << t.value << endl;
+                             break;
 
         case MULTIPLY:
             cout << "MULTIPLY : " << t.value << endl;
@@ -154,16 +147,16 @@ void Lexer::printTokens(vector<Token> tokens)
             break;
 
         case RPAREN:
-            cout << "RPAREN : " << t.value << endl;
+            cout<<"RPAREN :"<<t.value<<endl;
             break;
 
         case INVALID:
-            cout << "LEXICAL ERROR : Invalid Character -> "
+            cout<<"LEXICAL ERROR : Invalid Character -> "
                  << t.value << endl;
             break;
 
         default:
             break;
         }
-    }
+                                 } 
 }
