@@ -18,7 +18,6 @@ bool Semantic::checkSemantic()
     {
         if(tokens[i].type == IDENTIFIER)
         {
-            // Assignment-এর left side skip
             if(i + 1 < tokens.size() &&
                tokens[i+1].type == ASSIGN)
             {
